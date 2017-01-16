@@ -25,4 +25,10 @@ $(document).ready(function main() {
     mainDiv.parentNode.appendChild(newtxt2);
 });
 
+function f1() {
+    "use strict";
+    document.getElementById('mycc2');
+    txtBox = document.getElementById('feedbackTxt');
+    txtBox.append.valueOf(result2);
+}
 
