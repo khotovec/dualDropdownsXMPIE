@@ -31,7 +31,7 @@
                 padding-top:20px;
             }
             
-            .divTest {
+            #divTest {
                 padding-top:10px;
                 Padding-left:20px;
             }
@@ -43,6 +43,7 @@
                 width: 150px;
                 color:darkmagenta;
             }
+            
         </style>
     </head>
     <body>
@@ -50,11 +51,14 @@
             <h1>Hello World!</h1>
             <p>This Document is for testing purposes. Below .divMain is the whiteboard.</p>
         </div>
-        <div class="divTest">
+        <div id="divTest">
             <h1>TESTING AREA</h1>
-            <form>
+            <form id="formArea">
                 <label id="inputlbl">This is a label:</label> <input type="text" id="inputtxt">
             </form>
+        </div>
+        <div class="divMain">
+            <button id="feedbackBtn" onclick="feedback">Test</button>
         </div>
     </body>    
 </html>
