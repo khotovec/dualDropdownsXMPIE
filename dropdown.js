@@ -32,3 +32,10 @@ $(document).ready(function main() {
     alert((result2.value) + " " + " " + (result1.value));
 }
 */
+
+function f2() {
+    "use strict";
+    var result1 = document.getElementById("mycc1"),
+        result2 = document.getElementById("mycc2");
+    $('#finalText').val($('#finalText')).val(result1.value + " " + result2.value);
+}
