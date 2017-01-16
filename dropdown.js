@@ -23,5 +23,6 @@ $(document).ready(function main() {
     mainDiv.parentNode.appendChild(newlbl2);
     newlbl2.style.color = 'white';
     mainDiv.parentNode.appendChild(newtxt2);
-    
 });
+
+
