@@ -2,65 +2,41 @@
 /*global $, jQuery*/
 /*jslint devel: true */
 
-$(document).ready(function main() {
+$(document).ready(function appendID() {
     "use strict";
-    var mainDiv = ($(".clearingConfigCell")),
-        inputlbl = document.getElementById('ctl00_cphMainContent_ctlClearingUserData10005_lblCostCenter'),
-        inputtxt = document.getElementById('ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter'),
-        newlbl = document.createElement('divNewlbl'),
-        newtxt = document.createElement('divNewtxt'),
-        newlbl2 = document.createElement('divNewlbl2'),
-        newtxt2 = document.createElement('divNewtxt2');
-    inputlbl.style.visibility = 'hidden';
-    inputtxt.style.visibility = 'hidden';
-    newlbl.innerHTML = '<label>Please select your cost center: </label>';
-    newtxt.innerHTML = '<select id="mycc1"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
-    newlbl2.innerHTML = '<br><br><label>Please select your cost center: </label>';
-    newtxt2.innerHTML = '<select id="mycc2"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
-    if (newlbl.length > 0) {
-        alert("This works!");
-    }
+    document.querySelector('form.formArea').id = 'formID';
 });
 
-/* function f1() {
+$(document).ready(function main() {
     "use strict";
-    var result1 = document.getElementById("mycc1"),
-        result2 = document.getElementById("mycc2");
-    alert((result2.value) + " " + " " + (result1.value));
-}
-*/
+    var mainDiv = document.getElementById('formID'),
+        inputlbl = document.getElementById('inputlbl'),
+        inputtxt = document.getElementById('inputtxt'),
+        newdiv1 = document.createElement('div'),
+        newdiv2 = document.createElement('div'),
+        breakDiv = document.createElement('div'),
+        breakDiv2 = document.createElement('div'),
+        confirmBtn = document.createElement('div');
+    inputlbl.style.display = 'none';
+    inputtxt.style.display = 'none';
+    newdiv1.setAttribute("class", "divTest");
+    newdiv1.innerHTML = '<label style="padding-right:3px;">This is a Test: </label><select id="mycc1" class="drpDwn"><option>Test1</option><option>DuggieDoo</option>';
+    newdiv2.setAttribute("class", "divTest");
+    newdiv2.innerHTML = '<label style="padding-right:3px;">This is a Test: </label><select id="mycc2" class="drpDwn"><option>Test1</option><option>DuggieDoo</option>';
+    breakDiv.style.paddingTop = '10px';
+    breakDiv2.style.paddingTop = '10px';
+    confirmBtn.setAttribute("class", "newBtn");
+    confirmBtn.innerHTML = '<button class="btn" onclick="f2(); return false;">This is a Test</button>';
+    mainDiv.append(newdiv1);
+    mainDiv.append(breakDiv);
+    mainDiv.append(newdiv2);
+    mainDiv.append(breakDiv2);
+    mainDiv.append(confirmBtn);
+});
 
-/* F2 is FUNCTIONAL */
-
-/*
 function f2() {
     "use strict";
     var result1 = document.getElementById("mycc1"),
         result2 = document.getElementById("mycc2");
     $('#finalText').val($('#finalText')).val(result1.value + " " + result2.value);
 }
-*/
-
-
-/*jslint browser: true*/
-/*global $, jQuery*/
-/*jslint devel: true */
-
-$(document).ready(function () {
-    "use strict";
-    var inputlbl = document.getElementById('ctl00_cphMainContent_ctlClearingUserData10005_lblCostCenter'),
-        inputtxt = document.getElementById('ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter');
-    inputlbl.style.display = 'none';
-    inputtxt.style.display = 'none';
-});
-
-
-
-/*jslint browser: true*/
-/*global $, jQuery*/
-/*jslint devel: true */
-$(document).ready(function () {
-    "use strict";
-    var inputlbl = document.getElementById('ctl00_cphMainContent_ctlClearingUserData10005_lblCostCenter');
-    inputlbl.style.display = 'none';
-});

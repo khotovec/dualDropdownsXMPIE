@@ -2,48 +2,41 @@
 /*global $, jQuery*/
 /*jslint devel: true */
 
-$(document).ready(function main() {
+$(document).ready(function appendID() {
     "use strict";
-    var mainDiv = ($('formArea')),
-        inputlbl = document.getElementById('inputlbl'),
-        inputtxt = document.getElementById('inputtxt'),
-        newlbl = document.createElement('divNewlbl'),
-        newtxt = document.createElement('divNewtxt'),
-        newlbl2 = document.createElement('divNewlbl2'),
-        newtxt2 = document.createElement('divNewtxt2');
-    newlbl.innerHTML = '<label>Please select your cost center: </label>';
-    newtxt.innerHTML = '<select id="mycc1" class="drpDwn"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
-    newlbl2.innerHTML = '<br><br><label>Please select your cost center: </label>';
-    newtxt2.innerHTML = '<select id="mycc2" class="drpDwn"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
-    inputlbl.style.display = 'none';
-    inputtxt.style.display = 'none';
-    mainDiv.parentNode.appendChild(newlbl);
-    newlbl.style.color = 'white';
-    mainDiv.parentNode.appendChild(newtxt);
-    mainDiv.parentNode.appendChild(newlbl2);
-    newlbl2.style.color = 'white';
-    mainDiv.parentNode.appendChild(newtxt2);
+    document.querySelector('form.formArea').id = 'formID';
 });
 
-/* function f1() {
+$(document).ready(function main() {
     "use strict";
-    var result1 = document.getElementById("mycc1"),
-        result2 = document.getElementById("mycc2");
-    alert((result2.value) + " " + " " + (result1.value));
-}
-*/
-/*
+    var mainDiv = document.getElementById('formID'),
+        inputlbl = document.getElementById('inputlbl'),
+        inputtxt = document.getElementById('inputtxt'),
+        newdiv1 = document.createElement('div'),
+        newdiv2 = document.createElement('div'),
+        breakDiv = document.createElement('div'),
+        breakDiv2 = document.createElement('div'),
+        confirmBtn = document.createElement('div');
+    inputlbl.style.display = 'none';
+    inputtxt.style.display = 'none';
+    newdiv1.setAttribute("class", "divTest");
+    newdiv1.innerHTML = '<label style="padding-right:3px;">This is a Test: </label><select id="mycc1" class="drpDwn"><option>Test1</option><option>DuggieDoo</option>';
+    newdiv2.setAttribute("class", "divTest");
+    newdiv2.innerHTML = '<label style="padding-right:3px;">This is a Test: </label><select id="mycc2" class="drpDwn"><option>Test1</option><option>DuggieDoo</option>';
+    breakDiv.style.paddingTop = '10px';
+    breakDiv2.style.paddingTop = '10px';
+    confirmBtn.setAttribute("class", "newBtn");
+    confirmBtn.innerHTML = '<button class="btn" onclick="f2(); return false;">This is a Test</button>';
+    mainDiv.append(newdiv1);
+    mainDiv.append(breakDiv);
+    mainDiv.append(newdiv2);
+    mainDiv.append(breakDiv2);
+    mainDiv.append(confirmBtn);
+});
+
 function f2() {
     "use strict";
     var result1 = document.getElementById("mycc1"),
         result2 = document.getElementById("mycc2");
     $('#finalText').val($('#finalText')).val(result1.value + " " + result2.value);
 }
-*/
-/*
-function f2() {
-    "use strict";
-    var mainDiv = ($('formArea'));
-    alert(mainDiv + " is working!");
-}
-*/
