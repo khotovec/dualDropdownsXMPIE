@@ -12,9 +12,9 @@ $(document).ready(function main() {
         newlbl2 = document.createElement('divNewlbl2'),
         newtxt2 = document.createElement('divNewtxt2');
     newlbl.innerHTML = '<label>Please select your cost center: </label>';
-    newtxt.innerHTML = '<select id="mycc1"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
+    newtxt.innerHTML = '<select id="mycc1" class="drpDwn"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
     newlbl2.innerHTML = '<br><br><label>Please select your cost center: </label>';
-    newtxt2.innerHTML = '<select id="mycc2"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
+    newtxt2.innerHTML = '<select id="mycc2" class="drpDwn"> <option value="Testing1">Testing1</option> <option value="Dug">Dug</option> </select>';
     inputlbl.style.display = 'none';
     inputtxt.style.display = 'none';
     mainDiv.parentNode.appendChild(newlbl);
