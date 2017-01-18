@@ -7,21 +7,6 @@ $(document).ready(function appendID() {
     document.querySelector('form.formArea').id = 'formID';
 });
 
-$(document).ready(function main() {
-    "use strict";
-    var mainDiv = document.getElementById('formID'),
-        newDiv1 = document.createElement('div');
-    newDiv1.innerHTML = '<button class="btn" onclick="f2(); return false;">This is a Test</button>';
-    mainDiv.append(newDiv1);
-});
-
-function getindex() {
-    "use strict";
-    var URLCheck = window.location.pathname;
-    alert(URLCheck);
-}
-
-/*
 $(document).ready(function appendID() {
     "use strict";
     document.querySelector('form.formArea').id = 'formID';
@@ -60,4 +45,3 @@ function f2() {
         result2 = document.getElementById("mycc2");
     $('#finalText').val($('#finalText')).val(result1.value + " " + result2.value);
 }
-*/
