@@ -4,7 +4,7 @@
 
 $(document).ready(function main() {
     "use strict";
-    var mainDiv = document.getElementById('formArea'),
+    var mainDiv = ($('formArea')),
         inputlbl = document.getElementById('inputlbl'),
         inputtxt = document.getElementById('inputtxt'),
         newlbl = document.createElement('divNewlbl'),
@@ -32,10 +32,18 @@ $(document).ready(function main() {
     alert((result2.value) + " " + " " + (result1.value));
 }
 */
-
+/*
 function f2() {
     "use strict";
     var result1 = document.getElementById("mycc1"),
         result2 = document.getElementById("mycc2");
     $('#finalText').val($('#finalText')).val(result1.value + " " + result2.value);
 }
+*/
+/*
+function f2() {
+    "use strict";
+    var mainDiv = ($('formArea'));
+    alert(mainDiv + " is working!");
+}
+*/

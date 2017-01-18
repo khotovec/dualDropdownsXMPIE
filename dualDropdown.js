@@ -6,7 +6,7 @@
 $(document).ready(function () {
     "use strict";
     var codes = ["TEST1", "TEST2"];
-    if ($(".clearingConfigCell")) {
+    if ($(".ClearingConfigCell")) {
 
         $('#ctl00_cphMainContent_ctlClearingUserData10005_lblCostCenter').hide();
         $('#ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter').hide();
