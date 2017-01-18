@@ -19,11 +19,9 @@ $(document).ready(function main() {
             newdiv2 = document.createElement('div'),
             breakDiv = document.createElement('div'),
             breakDiv2 = document.createElement('div'),
-            confirmBtn = document.createElement('div'),
-            checkoutBtn = document.getElementById('ctl00_cphMainContentFooter_btnCheckout');
+            confirmBtn = document.createElement('div');
         inputlbl.style.display = 'none';
         //inputtxt.style.display = 'none';
-        checkoutBtn.style.display = 'none';
         newdiv1.setAttribute("class", "divTest");
         newdiv1.innerHTML = '<label style="padding-right:3px;">This is a Test: </label><select id="mycc1" class="drpDwn"><option>Test1</option><option>DuggieDoo</option>';
         newdiv2.setAttribute("class", "divTest");
@@ -40,9 +38,19 @@ $(document).ready(function main() {
     }
     function f2() {
         var result1 = document.getElementById("mycc1"),
-            result2 = document.getElementById("mycc2"),
-            checkoutBtnShow = document.getElementById('ctl00_cphMainContentFooter_btnCheckout');
+            result2 = document.getElementById("mycc2");
         $('#ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter').val($('#ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter')).val(result1.value + " " + result2.value);
-        checkoutBtnShow.style.display = 'show';
     }
 });
+
+
+function f2() {
+    "use strict";
+    var result1 = document.getElementById("mycc1"),
+        result2 = document.getElementById("mycc2");
+    $('#ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter').val($('#ctl00_cphMainContent_ctlClearingUserData10005_txtCostCenter')).val(result1.value + " " + result2.value);
+}
+
+function (f2) {
+    
+}
