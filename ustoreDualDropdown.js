@@ -31,7 +31,7 @@ $(document).ready(function main() {
         breakDiv.style.paddingTop = '10px';
         breakDiv2.style.paddingTop = '10px';
         confirmBtn.setAttribute("class", "newBtn");
-        confirmBtn.innerHTML = '<button type="button" class=" btn btn-default XmpImageButton XmpieThemeColorButton" onclick="f2();" style="border:0;">Click Here to Confirm your Cost Centers</button>';
+        confirmBtn.innerHTML = '<button type="button" class=" btn btn-default XmpImageButton XmpieThemeColorButton" onclick="f2();" style="border:0;">Click Here to Confirm your Cost Centers</button><br><br>If you have multiple cost centers, please choose here. If you have more than two,<br>or need them split between multiple line items, please notate in the templates<br>comment section before checkout.';
         mainDiv.append(newdiv1);
         mainDiv.append(breakDiv);
         mainDiv.append(newdiv2);
